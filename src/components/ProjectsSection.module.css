@@ -1,0 +1,162 @@
+.projectsSection {
+  min-height: 100vh;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 80px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.header {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.heading {
+  font-family: 'Turret Road', sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1;
+  display: inline-block;
+}
+
+.smiley {
+  display: inline-block;
+  font-size: 48px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.subtitle {
+  font-family: 'Caveat', cursive;
+  color: #8b9dc3;
+  font-size: 22px;
+  margin-top: 16px;
+  line-height: 1.4;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.projectCard {
+  background-color: #4a4a4a;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.projectCard:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.projectImage {
+  width: 100%;
+  height: 350px;
+  background-color: #5a5a5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-family: 'Macondo', cursive;
+  font-size: 14px;
+}
+
+.projectName {
+  padding: 20px;
+  font-family: 'Turret Road', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.funFactsCard {
+  background: linear-gradient(135deg, #5a5a5a 0%, #4a4a4a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  position: relative;
+}
+
+.funFactsSmiley {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.funFactsText {
+  font-family: 'Turret Road', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.bottomNotes {
+  margin-top: 48px;
+  position: relative;
+}
+
+.note {
+  font-family: 'Caveat', cursive;
+  color: #8b9dc3;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.noteRight {
+  font-family: 'Caveat', cursive;
+  color: #8b9dc3;
+  font-size: 18px;
+  text-align: right;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.noteRight2 {
+  font-family: 'Caveat', cursive;
+  color: #8b9dc3;
+  font-size: 20px;
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 60px;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 48px;
+  }
+  
+  .smiley {
+    font-size: 36px;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projectImage {
+    height: 250px;
+  }
+}
