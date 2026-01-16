@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './HeroSection.module.css';
 
 const HeroSection: React.FC = () => {
@@ -23,7 +24,12 @@ const HeroSection: React.FC = () => {
       <div className={styles.heroContent}>
         <div className={styles.heroInner}>
           {/* Handwritten Name with Decorative Curve */}
-          <div className={styles.nameContainer}>
+          <motion.div 
+            className={styles.nameContainer}
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <svg 
               className={styles.curveSvg}
               viewBox="0 0 250 120" 
@@ -40,10 +46,15 @@ const HeroSection: React.FC = () => {
             <div className={styles.handwrittenName}>
               Uchenna Umoke
             </div>
-          </div>
+          </motion.div>
 
           {/* Portfolio Text with Decorative Elements */}
-          <div className={styles.portfolioContainer}>
+          <motion.div 
+            className={styles.portfolioContainer}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
             <h1 className={styles.portfolioText}>
               P
               <span className={styles.letterO}>
@@ -67,17 +78,27 @@ const HeroSection: React.FC = () => {
                 </span>
               </span>
             </h1>
-          </div>
+          </motion.div>
 
           {/* Subtitle */}
-          <div className={styles.subtitle}>
+          <motion.div 
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
             <span className={styles.subtitleBadge}>
               Full Stack Developer
             </span>
-          </div>
+          </motion.div>
 
           {/* Download CV Button */}
-          <div className={styles.cvButtonContainer}>
+          <motion.div 
+            className={styles.cvButtonContainer}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+          >
             <a 
               href="/Uchenna-Umoke-CV-Resume.pdf" 
               download 
@@ -85,7 +106,7 @@ const HeroSection: React.FC = () => {
             >
               Download CV
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
 
