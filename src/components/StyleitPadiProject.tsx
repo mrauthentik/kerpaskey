@@ -83,36 +83,15 @@ const StyleitPadiProject: React.FC = () => {
             </p>
           </motion.div>
 
-          <motion.div 
-            className={styles.challengeBox}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+          <motion.div
+            className={styles.handwrittenNote}
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            whileHover={{ scale: 1.02 }}
           >
-            <div className={styles.arrow}>→</div>
-            <div className={styles.challengeText}>
-              technical focus
-            </div>
-            <div className={styles.featureGrid}>
-              <div className={styles.feature}>
-                <Lock size={20} />
-                <span>Security best practices</span>
-              </div>
-              <div className={styles.feature}>
-                <Server size={20} />
-                <span>Scalable architecture</span>
-              </div>
-              <div className={styles.feature}>
-                <Zap size={20} />
-                <span>Performance optimization</span>
-              </div>
-              <div className={styles.feature}>
-                <Database size={20} />
-                <span>Edge Functions & BaaS</span>
-              </div>
-            </div>
+            Focus: Security, Scalability,<br />
+            Speed & Optimization
           </motion.div>
         </div>
       </div>
