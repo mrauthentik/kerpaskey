@@ -221,7 +221,35 @@
   line-height: 1.5;
 }
 
+.statCircle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statCircle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.statText {
+  text-align: center;
+  z-index: 1;
+  font-family: 'Caveat', cursive;
+  color: #8b9dc3;
+}
+
+.statNumber {
+  font-family: 'Caveat', cursive;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
 .statLabel {
+  font-family: 'Caveat', cursive;
   font-size: 16px;
   line-height: 1.3;
 }
