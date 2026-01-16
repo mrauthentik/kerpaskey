@@ -43,7 +43,10 @@
 
 .skillIcon {
   position: absolute;
-  font-size: 32px;
+  color: #8b9dc3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skillIcon:nth-child(1) {
