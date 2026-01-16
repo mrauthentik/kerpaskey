@@ -78,7 +78,7 @@ const ProjectsSection: React.FC = () => {
             </motion.div>
           ))}
 
-          {/* Fun Facts Card */}
+          {/* My Journey Card */}
           <motion.div
             className={`${styles.projectCard} ${styles.funFactsCard}`}
             initial={{ opacity: 0, y: 50 }}
@@ -91,19 +91,19 @@ const ProjectsSection: React.FC = () => {
             }}
           >
             <motion.div 
-              className={styles.funFactsSmiley}
+              className={styles.journeyIcon}
               animate={{
-                rotate: [0, -10, 10, 0],
+                y: [0, -5, 0],
               }}
               transition={{
-                duration: 2.5,
+                duration: 2,
                 repeat: Infinity,
               }}
             >
-              ☺
+              🚀
             </motion.div>
             <div className={styles.funFactsText}>
-              Fun facts<br />about me!
+              My Journey<br />2020 → 2026
             </div>
           </motion.div>
         </div>

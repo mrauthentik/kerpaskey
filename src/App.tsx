@@ -5,6 +5,7 @@ import ProjectsSection from './components/ProjectsSection'
 import GueCyberProject from './components/GueCyberProject'
 import StyleitPadiProject from './components/StyleitPadiProject'
 import TeachingProject from './components/TeachingProject'
+import JourneySection from './components/JourneySection'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <GueCyberProject />
       <StyleitPadiProject />
       <TeachingProject />
+      <JourneySection />
     </div>
   )
 }
