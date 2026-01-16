@@ -1,17 +1,101 @@
 import React from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { Layout, Gauge, Users, Shield } from 'lucide-react';
+import { motion } from 'framer-motion';
 import styles from './ProjectDetailSection.module.css';
 
 const GueCyberProject: React.FC = () => {
-  const { scrollYProgress } = useScroll();
-  
-  const imageY = useTransform(scrollYProgress, [0, 1], [0, -50]);
-
   return (
-    <section className={styles.projectDetailSection}>
+    <section className={`${styles.projectDetailSection} ${styles.lightBg}`}>
       <div className={styles.container}>
-        {/* Left Side - Content */}
+        {/* Left Side - Phone Mockups */}
+        <div className={styles.mockupsContainer}>
+          {/* Decorative Flowers */}
+          <motion.svg
+            className={styles.decorativeFlower}
+            style={{ top: '10%', left: '5%' }}
+            width="80"
+            height="80"
+            viewBox="0 0 80 80"
+            initial={{ opacity: 0, rotate: -20 }}
+            whileInView={{ opacity: 1, rotate: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <path
+              d="M40 20 Q 35 25, 40 30 Q 45 25, 40 20 M40 50 Q 35 55, 40 60 Q 45 55, 40 50 M20 40 Q 25 35, 30 40 Q 25 45, 20 40 M50 40 Q 55 35, 60 40 Q 55 45, 50 40 M40 40 Q 40 35, 40 40"
+              stroke="#8b9dc3"
+              strokeWidth="2"
+              fill="none"
+            />
+            <circle cx="40" cy="40" r="5" fill="#8b9dc3" />
+          </motion.svg>
+
+          <motion.svg
+            className={styles.decorativeFlower}
+            style={{ bottom: '15%', right: '10%' }}
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            initial={{ opacity: 0, rotate: 20 }}
+            whileInView={{ opacity: 1, rotate: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <path
+              d="M30 15 Q 27 18, 30 21 Q 33 18, 30 15 M30 39 Q 27 42, 30 45 Q 33 42, 30 39 M15 30 Q 18 27, 21 30 Q 18 33, 15 30 M39 30 Q 42 27, 45 30 Q 42 33, 39 30"
+              stroke="#8b9dc3"
+              strokeWidth="2"
+              fill="none"
+            />
+            <circle cx="30" cy="30" r="4" fill="#8b9dc3" />
+          </motion.svg>
+
+          {/* Phone Mockups Grid */}
+          <div className={styles.phoneMockupsGrid}>
+            <motion.div
+              className={styles.phoneMockupAngled}
+              style={{ transform: 'rotate(-8deg)' }}
+              initial={{ opacity: 0, y: 50, rotate: -15 }}
+              whileInView={{ opacity: 1, y: 0, rotate: -8 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              whileHover={{ scale: 1.05, rotate: -5 }}
+            >
+              <div className={styles.phoneFrame}>
+                <div className={styles.phoneScreenContent}>Dashboard</div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className={styles.phoneMockupAngled}
+              style={{ transform: 'rotate(5deg)' }}
+              initial={{ opacity: 0, y: 50, rotate: 12 }}
+              whileInView={{ opacity: 1, y: 0, rotate: 5 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              whileHover={{ scale: 1.05, rotate: 8 }}
+            >
+              <div className={styles.phoneFrame}>
+                <div className={styles.phoneScreenContent}>Courses</div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className={styles.phoneMockupAngled}
+              style={{ transform: 'rotate(-3deg)' }}
+              initial={{ opacity: 0, y: 50, rotate: -10 }}
+              whileInView={{ opacity: 1, y: 0, rotate: -3 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              whileHover={{ scale: 1.05, rotate: 0 }}
+            >
+              <div className={styles.phoneFrame}>
+                <div className={styles.phoneScreenContent}>Progress</div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Right Side - Content */}
         <div className={styles.leftContent}>
           <motion.h2 
             className={styles.heading}
@@ -53,6 +137,42 @@ const GueCyberProject: React.FC = () => {
               Built with <strong>React, TypeScript, Node.js, and modern BaaS platforms</strong>, the system 
               emphasizes performance optimization, clean architecture, and exceptional user experience.
             </p>
+          </motion.div>
+
+          {/* Handwritten Annotations with Circles */}
+          <motion.div
+            className={styles.annotationCircle}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <svg width="200" height="120" viewBox="0 0 200 120">
+              <ellipse
+                cx="100"
+                cy="60"
+                rx="90"
+                ry="50"
+                stroke="#8b9dc3"
+                strokeWidth="2"
+                fill="none"
+              />
+            </svg>
+            <div className={styles.annotationText}>
+              Implemented 4 different<br />screens in 2 days
+            </div>
+          </motion.div>
+
+          <motion.div
+            className={styles.handwrittenNote}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            My goal is to create scalable,<br />
+            production-ready systems that<br />
+            prioritize user experience
           </motion.div>
 
           <motion.div 
