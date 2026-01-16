@@ -3,15 +3,6 @@ import { motion } from 'framer-motion';
 import styles from './SkillsSection.module.css';
 
 const SkillsSection: React.FC = () => {
-  const skillIcons = [
-    { name: 'Figma', img: '/skill-img/firebase.png' },
-    { name: 'AI', img: '/skill-img/supabase.png' },
-    { name: 'HTML', img: '/skill-img/react.png' },
-    { name: 'CSS', img: '/skill-img/tailwind.png' },
-    { name: 'PS', img: '/skill-img/ts.png' },
-    { name: 'Figma', img: '/skill-img/nodejs.png' },
-  ];
-
   const skillsCategories = [
     {
       title: 'Frontend Development',
