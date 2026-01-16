@@ -10,7 +10,10 @@ const AboutSection: React.FC = () => {
           <div className={styles.photoWrapper}>
             {/* Main circular photo placeholder */}
             <div className={styles.photoCircle}>
-              Photo Placeholder
+              <img 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/uche%20potrait.jpg-bx840Ymck544BqChHf4CgKD7qiau6W.jpeg" 
+                alt="Profile"
+              />
             </div>
 
             {/* Decorative Text Elements Around Circle */}
