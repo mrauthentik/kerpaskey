@@ -209,8 +209,14 @@
     font-size: 48px;
   }
   
-  .skillsLists {
+  .skillsCategories {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .techIconsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
   
   .booksStack {

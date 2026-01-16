@@ -1,33 +1,60 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Code2, FileCode, Server, Database, Zap, GitBranch } from 'lucide-react';
 import styles from './SkillsSection.module.css';
 
 const SkillsSection: React.FC = () => {
   const skillIcons = [
-    { name: 'React', icon: '⚛️' },
-    { name: 'TypeScript', icon: '📘' },
-    { name: 'Node.js', icon: '🟢' },
-    { name: 'Database', icon: '🗄️' },
-    { name: 'API', icon: '🔌' },
-    { name: 'Git', icon: '🔀' },
+    { name: 'React', Icon: Code2 },
+    { name: 'TypeScript', Icon: FileCode },
+    { name: 'Node.js', Icon: Server },
+    { name: 'Database', Icon: Database },
+    { name: 'API', Icon: Zap },
+    { name: 'Git', Icon: GitBranch },
   ];
 
-  const skillsList1 = [
-    'UX Research',
-    'Competitor Analysis',
-    'Personas',
-    'Empathy Maps',
-    'User Journey',
-    'User Flow',
-  ];
-
-  const skillsList2 = [
-    'Information Architecture',
-    'Design System',
-    'Moodboards',
-    'Wireframe',
-    'High Fidelity Prototypes',
-    'Mock ups',
+  const skillsCategories = [
+    {
+      title: 'Frontend Development',
+      skills: [
+        'React, TypeScript, JavaScript (ES6+)',
+        'Component-driven architecture',
+        'Responsive & mobile-first design',
+        'Pixel-perfect UI implementation',
+        'Framer Motion (animations & transitions)',
+        'GSAP',
+        'Material UI, Tailwind CSS, Emotion Styled, ShadCN UI',
+        'Accessibility (semantic HTML, ARIA basics)',
+      ],
+    },
+    {
+      title: 'Backend Development',
+      skills: [
+        'Node.js, Express.js',
+        'RESTful API design & integration',
+        'Backend-as-a-Service (BaaS)',
+        'Supabase (Auth, Database, Edge Functions)',
+        'Firebase (Authentication, Firestore)',
+        'SQL (relational data modelling & queries)',
+      ],
+    },
+    {
+      title: 'State, Data & Performance',
+      skills: [
+        'TanStack Query (React Query)',
+        'Asynchronous data handling',
+        'Caching & performance optimisation',
+        'Error handling & loading states',
+      ],
+    },
+    {
+      title: 'DevOps & Tooling',
+      skills: [
+        'Git, GitHub (version control & collaboration)',
+        'GitHub Actions (CI/CD pipelines)',
+        'Docker (fundamentals & deployment workflows)',
+      ],
+    },
   ];
 
   return (
@@ -45,39 +72,31 @@ const SkillsSection: React.FC = () => {
             Skills
           </motion.h2>
 
-          {/* Skill Icons Circle */}
+          {/* Technology Icons Grid */}
           <motion.div 
-            className={styles.skillsCircle}
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
+            className={styles.techIconsGrid}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            {skillIcons.map((skill, index) => (
-              <motion.div
-                key={index}
-                className={styles.skillIcon}
-                animate={{
-                  y: [0, -10, 0],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  delay: index * 0.2,
-                }}
-              >
-                {skill.icon}
-              </motion.div>
-            ))}
-            <motion.div 
-              className={styles.circleText}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-            >
-              I'm always<br />developing my<br />skills
-            </motion.div>
+            {skillIcons.map((skill, index) => {
+              const IconComponent = skill.Icon;
+              return (
+                <motion.div
+                  key={index}
+                  className={styles.techIcon}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 * index, duration: 0.4 }}
+                  whileHover={{ scale: 1.1, y: -5 }}
+                >
+                  <IconComponent size={32} strokeWidth={1.5} />
+                  <span>{skill.name}</span>
+                </motion.div>
+              );
+            })}
           </motion.div>
 
           {/* Description */}
@@ -88,46 +107,35 @@ const SkillsSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <p>• Understanding and implementation of visual and interaction design principles</p>
-            <p>• Understanding of accessibility and inclusivity best practices for Digital Design</p>
+            <p>• Building scalable, production-ready applications with modern frontend and backend technologies</p>
+            <p>• Delivering pixel-perfect UIs with clean architecture, performance optimization, and exceptional UX</p>
           </motion.div>
 
-          {/* Skills Lists */}
-          <div className={styles.skillsLists}>
-            <motion.ul 
-              className={styles.skillsList}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              {skillsList1.map((skill, index) => (
-                <motion.li 
-                  key={index}
-                  whileHover={{ x: 5, color: '#8b9dc3' }}
-                  transition={{ duration: 0.2 }}
-                >
-                  • {skill}
-                </motion.li>
-              ))}
-            </motion.ul>
-            <motion.ul 
-              className={styles.skillsList}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-            >
-              {skillsList2.map((skill, index) => (
-                <motion.li 
-                  key={index}
-                  whileHover={{ x: 5, color: '#8b9dc3' }}
-                  transition={{ duration: 0.2 }}
-                >
-                  • {skill}
-                </motion.li>
-              ))}
-            </motion.ul>
+          {/* Skills Categories */}
+          <div className={styles.skillsCategories}>
+            {skillsCategories.map((category, catIndex) => (
+              <motion.div
+                key={catIndex}
+                className={styles.categorySection}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.6 + catIndex * 0.1 }}
+              >
+                <h3 className={styles.categoryTitle}>{category.title}</h3>
+                <ul className={styles.skillsList}>
+                  {category.skills.map((skill, index) => (
+                    <motion.li
+                      key={index}
+                      whileHover={{ x: 5, color: '#8b9dc3' }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      • {skill}
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
           </div>
         </div>
 
@@ -203,7 +211,7 @@ const SkillsSection: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
             >
-              my books<br />about<br />Design
+              my learning<br />resources &<br />tech books
             </motion.div>
 
             {/* Books Stack Placeholder */}
