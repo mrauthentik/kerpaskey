@@ -1,0 +1,121 @@
+.contactSection {
+  min-height: 100vh;
+  background-color: #f5f3f0;
+  padding: 80px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.leftContent {
+  padding: 0 32px;
+  position: relative;
+}
+
+.heading {
+  font-family: 'Turret Road', sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.handwrittenText {
+  font-family: 'Caveat', cursive;
+  color: #8b9dc3;
+  font-size: 28px;
+  line-height: 1.4;
+  margin-top: 32px;
+}
+
+.star {
+  position: absolute;
+  font-size: 48px;
+  color: #8b9dc3;
+}
+
+.starSmall {
+  position: absolute;
+  font-size: 24px;
+  color: #8b9dc3;
+}
+
+.rightContent {
+  padding: 0 32px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactItem h3 {
+  font-family: 'Turret Road', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #8b9dc3;
+  margin: 0;
+}
+
+.contactItem a {
+  font-family: 'Macondo', cursive;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  word-break: break-word;
+}
+
+.contactItem a:hover {
+  color: #8b9dc3;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .heading {
+    font-size: 60px;
+  }
+  
+  .handwrittenText {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 48px;
+  }
+  
+  .handwrittenText {
+    font-size: 20px;
+  }
+  
+  .contactItem h3 {
+    font-size: 18px;
+  }
+  
+  .contactItem a {
+    font-size: 16px;
+  }
+}

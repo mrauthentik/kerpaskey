@@ -7,6 +7,7 @@ import GueCyberProject from './components/GueCyberProject'
 import StyleitPadiProject from './components/StyleitPadiProject'
 import TeachingProject from './components/TeachingProject'
 import JourneySection from './components/JourneySection'
+import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <StyleitPadiProject />
       <TeachingProject />
       <JourneySection />
+      <ContactSection />
       <Footer />
     </div>
   )

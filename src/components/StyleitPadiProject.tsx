@@ -9,32 +9,39 @@ const StyleitPadiProject: React.FC = () => {
         {/* Left Side - Phone Mockups */}
         <div className={styles.mockupsContainer}>
           <motion.div 
-            className={styles.screenshotsContainer}
+            className={styles.handwrittenSection}
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className={styles.screenshotsGrid}>
-              {[1, 2, 3, 4].map((item, index) => (
-                <motion.div
-                  key={item}
-                  className={styles.screenshot}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.1 * index }}
-                  whileHover={{ 
-                    scale: 1.05,
-                    transition: { duration: 0.3 }
-                  }}
-                >
-                  <div className={styles.screenshotPlaceholder}>
-                    Backend Architecture {item}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+            <motion.div
+              className={styles.handwrittenLanguages}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <h3>Languages & Technologies:</h3>
+              <p>Node.js • TypeScript</p>
+              <p>PostgreSQL • Supabase</p>
+              <p>Edge Functions • REST APIs</p>
+            </motion.div>
+
+            <motion.div
+              className={styles.handwrittenArchitecture}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <h3>Architecture:</h3>
+              <p>Backend-as-a-Service (BaaS)</p>
+              <p>Serverless Functions</p>
+              <p>Real-time Database</p>
+              <p>Authentication & Authorization</p>
+              <p>Row Level Security (RLS)</p>
+            </motion.div>
           </motion.div>
         </div>
 

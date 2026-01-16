@@ -4,10 +4,10 @@ import styles from './ProjectsSection.module.css';
 
 const ProjectsSection: React.FC = () => {
   const projects = [
-    { id: 1, name: '1. NEXA EDU', placeholder: 'Educational Platform' },
-    { id: 2, name: '2. GueCyber LMS', placeholder: 'GueCyber LMS Platform' },
-    { id: 3, name: '3. Styleit Padi Backend', placeholder: 'Backend Architecture' },
-    { id: 4, name: '4. Teaching & Training', placeholder: 'Education Programs' },
+    { id: 1, name: '1. NEXA EDU', thumbnail: '/projects/thumbnails/nexa-thumb.png' },
+    { id: 2, name: '2. GueCyber LMS', thumbnail: null },
+    { id: 3, name: '3. Styleit Padi Backend', thumbnail: '/projects/thumbnails/styleit-thumb.png' },
+    { id: 4, name: '4. Teaching & Training', thumbnail: '/projects/thumbnails/teaching-thumb.jpg' },
   ];
 
   return (
@@ -65,7 +65,11 @@ const ProjectsSection: React.FC = () => {
               }}
             >
               <div className={styles.projectImage}>
-                {project.placeholder}
+                {project.thumbnail ? (
+                  <img src={project.thumbnail} alt={project.name} className={styles.projectThumbnail} />
+                ) : (
+                  <div className={styles.projectPlaceholder}>GueCyber LMS</div>
+                )}
               </div>
               <motion.div 
                 className={styles.projectName}

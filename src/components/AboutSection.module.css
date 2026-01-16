@@ -62,60 +62,34 @@
   white-space: nowrap;
 }
 
-@keyframes orbitRotate {
-  from {
-    transform: rotate(0deg) translateX(200px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(200px) rotate(-360deg);
-  }
-}
-
 .traitCreative {
-  top: 50%;
-  left: 50%;
-  transform: rotate(0deg) translateX(200px) rotate(0deg);
-  animation: orbitRotate 30s linear infinite;
+  top: -32px;
+  left: 32px;
 }
 
 .traitDetailOriented {
-  top: 50%;
-  left: 50%;
-  transform: rotate(60deg) translateX(200px) rotate(-60deg);
-  animation: orbitRotate 30s linear infinite;
-  animation-delay: -5s;
+  top: -16px;
+  right: 16px;
 }
 
 .traitSociable {
-  top: 50%;
-  left: 50%;
-  transform: rotate(120deg) translateX(200px) rotate(-120deg);
-  animation: orbitRotate 30s linear infinite;
-  animation-delay: -10s;
+  top: 33%;
+  left: -64px;
 }
 
 .traitEmpathic {
   top: 50%;
-  left: 50%;
-  transform: rotate(180deg) translateX(200px) rotate(-180deg);
-  animation: orbitRotate 30s linear infinite;
-  animation-delay: -15s;
+  right: -48px;
 }
 
 .traitMotivated {
-  top: 50%;
-  left: 50%;
-  transform: rotate(240deg) translateX(200px) rotate(-240deg);
-  animation: orbitRotate 30s linear infinite;
-  animation-delay: -20s;
+  bottom: -32px;
+  left: 16px;
 }
 
 .traitFastLearner {
-  top: 50%;
-  left: 50%;
-  transform: rotate(300deg) translateX(200px) rotate(-300deg);
-  animation: orbitRotate 30s linear infinite;
-  animation-delay: -25s;
+  bottom: -16px;
+  right: 32px;
 }
 
 .star {

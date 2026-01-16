@@ -99,11 +99,11 @@ const TeachingProject: React.FC = () => {
           >
             <div className={styles.screenshotsGrid}>
               {[
-                'HTML/CSS/JS',
-                'Node.js & SQL',
-                'Cybersecurity',
-                'IoT Development'
-              ].map((topic, index) => (
+                { topic: 'HTML/CSS/JS', img: '/projects/teaching/teaching-topic-1.jpg' },
+                { topic: 'Node.js & SQL', img: '/projects/teaching/teaching-topic-2.png' },
+                { topic: 'Cybersecurity', img: '/projects/teaching/teaching-topic-3.jpg' },
+                { topic: 'IoT Development', img: '/projects/teaching/teaching-topic-4.png' }
+              ].map((item, index) => (
                 <motion.div
                   key={index}
                   className={styles.screenshot}
@@ -116,9 +116,7 @@ const TeachingProject: React.FC = () => {
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <div className={styles.screenshotPlaceholder}>
-                    {topic}
-                  </div>
+                  <img src={item.img} alt={item.topic} className={styles.screenshotImage} />
                 </motion.div>
               ))}
             </div>

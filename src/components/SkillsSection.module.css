@@ -136,39 +136,24 @@
   justify-content: center;
 }
 
-.star {
-  position: absolute;
-  font-size: 48px;
-  color: #8b9dc3;
-}
-
-.starSmall {
-  position: absolute;
-  font-size: 24px;
-  color: #8b9dc3;
-}
-
-.handwrittenText {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  font-family: 'Caveat', cursive;
-  color: #8b9dc3;
-  font-size: 28px;
-  line-height: 1.3;
-  text-align: center;
-}
-
 .booksStack {
   width: 400px;
   height: 300px;
-  background-color: #e0e0e0;
-  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(139, 157, 195, 0.1);
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+}
+
+.booksStack:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .bookPlaceholder {

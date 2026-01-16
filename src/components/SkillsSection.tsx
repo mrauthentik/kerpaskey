@@ -1,16 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, FileCode, Server, Database, Zap, GitBranch } from 'lucide-react';
 import styles from './SkillsSection.module.css';
 
 const SkillsSection: React.FC = () => {
   const skillIcons = [
-    { name: 'React', Icon: Code2 },
-    { name: 'TypeScript', Icon: FileCode },
-    { name: 'Node.js', Icon: Server },
-    { name: 'Database', Icon: Database },
-    { name: 'API', Icon: Zap },
-    { name: 'Git', Icon: GitBranch },
+    { name: 'Figma', img: '/skill-img/firebase.png' },
+    { name: 'AI', img: '/skill-img/supabase.png' },
+    { name: 'HTML', img: '/skill-img/react.png' },
+    { name: 'CSS', img: '/skill-img/tailwind.png' },
+    { name: 'PS', img: '/skill-img/ts.png' },
+    { name: 'Figma', img: '/skill-img/nodejs.png' },
   ];
 
   const skillsCategories = [
@@ -72,31 +71,34 @@ const SkillsSection: React.FC = () => {
             Skills
           </motion.h2>
 
-          {/* Technology Icons Grid */}
+          {/* Icon Circle with Handwritten Text */}
           <motion.div 
-            className={styles.techIconsGrid}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            className={styles.iconCircleContainer}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            {skillIcons.map((skill, index) => {
-              const IconComponent = skill.Icon;
-              return (
-                <motion.div
-                  key={index}
-                  className={styles.techIcon}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 * index, duration: 0.4 }}
-                  whileHover={{ scale: 1.1, y: -5 }}
-                >
-                  <IconComponent size={32} strokeWidth={1.5} />
-                  <span>{skill.name}</span>
-                </motion.div>
-              );
-            })}
+            <svg className={styles.circleOutline} viewBox="0 0 450 300">
+              <ellipse
+                cx="225"
+                cy="150"
+                rx="210"
+                ry="130"
+                stroke="#8b9dc3"
+                strokeWidth="2"
+                fill="none"
+              />
+            </svg>
+            <motion.div
+              className={styles.circleHandwrittenText}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
+            >
+              I'm always<br />developing my<br />skills
+            </motion.div>
           </motion.div>
 
           {/* Description */}
@@ -148,6 +150,20 @@ const SkillsSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
+            {/* Curved Line Around Books */}
+            <svg className={styles.curvedLine} viewBox="0 0 600 600">
+              <ellipse
+                cx="300"
+                cy="300"
+                rx="280"
+                ry="200"
+                stroke="#8b9dc3"
+                strokeWidth="2"
+                fill="none"
+                transform="rotate(-15 300 300)"
+              />
+            </svg>
+
             {/* Decorative Stars */}
             <motion.div 
               className={styles.star}
@@ -211,7 +227,7 @@ const SkillsSection: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
             >
-              my learning<br />resources &<br />tech books
+              my books<br />about<br />Design
             </motion.div>
 
             {/* Books Stack Placeholder */}
@@ -220,7 +236,7 @@ const SkillsSection: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <div className={styles.bookPlaceholder}>Books Image Placeholder</div>
+              <div className={styles.bookPlaceholder}>Design Books Collection</div>
             </motion.div>
 
             <motion.div 

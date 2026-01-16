@@ -28,70 +28,26 @@ const NexaProject: React.FC = () => {
             />
           </motion.svg>
 
-          {/* Phone Mockup */}
+          {/* Laptop Mockup with iframe */}
           <motion.div
-            className={styles.phoneMockupAngled}
-            style={{ transform: 'rotate(-5deg)' }}
-            initial={{ opacity: 0, y: 50, rotate: -12 }}
-            whileInView={{ opacity: 1, y: 0, rotate: -5 }}
+            className={styles.laptopMockup}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            whileHover={{ scale: 1.05, rotate: -2 }}
+            whileHover={{ scale: 1.02 }}
           >
-            <div className={styles.phoneFrame}>
-              <div className={styles.phoneScreenContent}>
-                <div style={{ 
-                  display: 'flex', 
-                  flexDirection: 'column', 
-                  gap: '12px',
-                  padding: '20px',
-                  height: '100%'
-                }}>
-                  <div style={{ 
-                    fontSize: '18px', 
-                    fontWeight: 'bold',
-                    fontFamily: 'Turret Road, sans-serif',
-                    color: '#8b9dc3'
-                  }}>
-                    NEXA EDU
-                  </div>
-                  <div style={{
-                    background: 'linear-gradient(135deg, #8b9dc3 0%, #6a7d9f 100%)',
-                    borderRadius: '12px',
-                    padding: '16px',
-                    color: 'white',
-                    fontSize: '12px',
-                    flex: 1
-                  }}>
-                    <div style={{ marginBottom: '8px', fontWeight: 'bold' }}>CBT Practice</div>
-                    <div style={{ fontSize: '10px', opacity: 0.9 }}>Past Questions</div>
-                  </div>
-                  <div style={{
-                    background: '#f0f0f0',
-                    borderRadius: '12px',
-                    padding: '12px',
-                    fontSize: '11px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px'
-                  }}>
-                    <span>🎧</span>
-                    <span>PDF to Audio</span>
-                  </div>
-                  <div style={{
-                    background: '#f0f0f0',
-                    borderRadius: '12px',
-                    padding: '12px',
-                    fontSize: '11px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px'
-                  }}>
-                    <span>🤖</span>
-                    <span>NEXA AI Assistant</span>
-                  </div>
-                </div>
+            <div className={styles.laptopFrame}>
+              <div className={styles.laptopScreen}>
+                <iframe
+                  src="https://nexaedu.ng"
+                  className={styles.laptopIframe}
+                  title="NEXA EDU Platform"
+                  loading="lazy"
+                  sandbox="allow-scripts allow-same-origin"
+                />
               </div>
+              <div className={styles.laptopBase}></div>
             </div>
           </motion.div>
 

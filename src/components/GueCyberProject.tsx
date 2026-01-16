@@ -61,7 +61,7 @@ const GueCyberProject: React.FC = () => {
               whileHover={{ scale: 1.05, rotate: -5 }}
             >
               <div className={styles.phoneFrame}>
-                <div className={styles.phoneScreenContent}>Dashboard</div>
+                <img src="/projects/guecyber/guecyber-phone-1.png" alt="GueCyber Dashboard" className={styles.phoneScreenImage} />
               </div>
             </motion.div>
 
@@ -75,7 +75,7 @@ const GueCyberProject: React.FC = () => {
               whileHover={{ scale: 1.05, rotate: 8 }}
             >
               <div className={styles.phoneFrame}>
-                <div className={styles.phoneScreenContent}>Courses</div>
+                <img src="/projects/guecyber/guecyber-phone-2.png" alt="GueCyber Courses" className={styles.phoneScreenImage} />
               </div>
             </motion.div>
 
@@ -89,7 +89,7 @@ const GueCyberProject: React.FC = () => {
               whileHover={{ scale: 1.05, rotate: 0 }}
             >
               <div className={styles.phoneFrame}>
-                <div className={styles.phoneScreenContent}>Progress</div>
+                <img src="/projects/guecyber/guecyber-phone-3.png" alt="GueCyber Progress" className={styles.phoneScreenImage} />
               </div>
             </motion.div>
           </div>
