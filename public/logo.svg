@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#3d3d3d" stroke="#8b9dc3" stroke-width="3"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#8b9dc3" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Main Text -->
+  <text x="100" y="95" font-family="'Turret Road', sans-serif" font-size="28" font-weight="800" fill="#8b9dc3" text-anchor="middle">
+    mr
+  </text>
+  <text x="100" y="125" font-family="'Turret Road', sans-serif" font-size="24" font-weight="700" fill="#f5f3f0" text-anchor="middle">
+    authentik
+  </text>
+  
+  <!-- Decorative Stars -->
+  <text x="30" y="50" font-size="16" fill="#8b9dc3" opacity="0.8">✦</text>
+  <text x="170" y="50" font-size="16" fill="#8b9dc3" opacity="0.8">✦</text>
+  <text x="30" y="170" font-size="12" fill="#8b9dc3" opacity="0.6">✦</text>
+  <text x="170" y="170" font-size="12" fill="#8b9dc3" opacity="0.6">✦</text>
+  
+  <!-- Accent Line -->
+  <line x1="50" y1="100" x2="70" y2="100" stroke="#8b9dc3" stroke-width="2" opacity="0.5"/>
+  <line x1="130" y1="100" x2="150" y2="100" stroke="#8b9dc3" stroke-width="2" opacity="0.5"/>
+</svg>
