@@ -1,14 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Server, Lock, Zap, Database } from 'lucide-react';
 import styles from './ProjectDetailSection.module.css';
 
 const StyleitPadiProject: React.FC = () => {
   return (
     <section className={`${styles.projectDetailSection} ${styles.lightBg}`}>
       <div className={styles.container}>
-        {/* Left Side - Screenshots */}
-        <div className={styles.rightContent}>
+        {/* Left Side - Phone Mockups */}
+        <div className={styles.mockupsContainer}>
           <motion.div 
             className={styles.screenshotsContainer}
             initial={{ opacity: 0, x: -50 }}
