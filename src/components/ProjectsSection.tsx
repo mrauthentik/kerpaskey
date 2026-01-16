@@ -4,11 +4,9 @@ import styles from './ProjectsSection.module.css';
 
 const ProjectsSection: React.FC = () => {
   const projects = [
-    { id: 1, name: '1.Danc.r', placeholder: 'Project 1 Image' },
-    { id: 2, name: '2. V-care', placeholder: 'Project 2 Image' },
-    { id: 3, name: '3. Redesign', placeholder: 'Project 3 Image' },
-    { id: 4, name: '4. Slowe', placeholder: 'Project 4 Image' },
-    { id: 5, name: '5. Inspiration', placeholder: 'Project 5 Image' },
+    { id: 1, name: '1. GueCyber LMS', placeholder: 'GueCyber LMS Platform' },
+    { id: 2, name: '2. Styleit Padi Backend', placeholder: 'Backend Architecture' },
+    { id: 3, name: '3. Teaching & Training', placeholder: 'Education Programs' },
   ];
 
   return (

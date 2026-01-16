@@ -26,8 +26,85 @@
   font-family: 'Turret Road', sans-serif;
   font-size: 80px;
   font-weight: 800;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   line-height: 1;
+}
+
+.projectMeta {
+  margin-bottom: 32px;
+  font-family: 'Caveat', cursive;
+  color: #8b9dc3;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.role {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.location {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Macondo', cursive;
+  font-size: 14px;
+  color: white;
+}
+
+.feature svg {
+  color: #8b9dc3;
+  flex-shrink: 0;
+}
+
+.screenshotsContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.screenshotsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.screenshot {
+  background: linear-gradient(135deg, #4a4a4a 0%, #3a3a3a 100%);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.screenshot:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+.screenshotPlaceholder {
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-family: 'Macondo', cursive;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  background-color: #2a2a2a;
 }
 
 .textContent {

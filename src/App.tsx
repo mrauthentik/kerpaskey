@@ -2,7 +2,9 @@ import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
 import SkillsSection from './components/SkillsSection'
 import ProjectsSection from './components/ProjectsSection'
-import ProjectDetailSection from './components/ProjectDetailSection'
+import GueCyberProject from './components/GueCyberProject'
+import StyleitPadiProject from './components/StyleitPadiProject'
+import TeachingProject from './components/TeachingProject'
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
-      <ProjectDetailSection />
+      <GueCyberProject />
+      <StyleitPadiProject />
+      <TeachingProject />
     </div>
   )
 }
