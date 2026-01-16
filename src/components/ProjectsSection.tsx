@@ -4,9 +4,10 @@ import styles from './ProjectsSection.module.css';
 
 const ProjectsSection: React.FC = () => {
   const projects = [
-    { id: 1, name: '1. GueCyber LMS', placeholder: 'GueCyber LMS Platform' },
-    { id: 2, name: '2. Styleit Padi Backend', placeholder: 'Backend Architecture' },
-    { id: 3, name: '3. Teaching & Training', placeholder: 'Education Programs' },
+    { id: 1, name: '1. NEXA EDU', placeholder: 'Educational Platform' },
+    { id: 2, name: '2. GueCyber LMS', placeholder: 'GueCyber LMS Platform' },
+    { id: 3, name: '3. Styleit Padi Backend', placeholder: 'Backend Architecture' },
+    { id: 4, name: '4. Teaching & Training', placeholder: 'Education Programs' },
   ];
 
   return (

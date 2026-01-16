@@ -2,6 +2,7 @@ import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
 import SkillsSection from './components/SkillsSection'
 import ProjectsSection from './components/ProjectsSection'
+import NexaProject from './components/NexaProject'
 import GueCyberProject from './components/GueCyberProject'
 import StyleitPadiProject from './components/StyleitPadiProject'
 import TeachingProject from './components/TeachingProject'
@@ -15,6 +16,7 @@ function App() {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
+      <NexaProject />
       <GueCyberProject />
       <StyleitPadiProject />
       <TeachingProject />

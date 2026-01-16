@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone } from 'lucide-react';
+import { Mail, Github, MessageCircle } from 'lucide-react';
 import styles from './Footer.module.css';
 
 const Footer: React.FC = () => {
@@ -105,12 +105,25 @@ const Footer: React.FC = () => {
               
               <div className={styles.contactItem}>
                 <Mail size={20} strokeWidth={1.5} />
-                <a href="mailto:uchennachidera@gmail.com">uchennachidera@gmail.com</a>
+                <a href="mailto:umokeuchennaofficial@gmail.com">umokeuchennaofficial@gmail.com</a>
               </div>
               
               <div className={styles.contactItem}>
-                <Phone size={20} strokeWidth={1.5} />
-                <a href="tel:+2348012345678">+234 801 234 5678</a>
+                <MessageCircle size={20} strokeWidth={1.5} />
+                <a href="https://wa.me/2348141602733" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              </div>
+              
+              <div className={styles.contactItem}>
+                <Github size={20} strokeWidth={1.5} />
+                <a href="https://github.com/mrauthentik" target="_blank" rel="noopener noreferrer">github.com/mrauthentik</a>
+              </div>
+              
+              <div className={styles.contactItem}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                </svg>
+                <a href="https://x.com/umokeuchenna" target="_blank" rel="noopener noreferrer">x.com/umokeuchenna</a>
               </div>
             </motion.div>
           </div>

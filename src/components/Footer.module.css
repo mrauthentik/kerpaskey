@@ -115,6 +115,7 @@
 .contactItem svg {
   color: #8b9dc3;
   flex-shrink: 0;
+  min-width: 20px;
 }
 
 .contactItem a {
