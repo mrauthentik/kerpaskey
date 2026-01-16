@@ -271,15 +271,46 @@
     font-size: 60px;
   }
   
+  .iconCircleContainer {
+    width: 380px;
+    height: 250px;
+  }
+  
+  .circleHandwrittenText {
+    font-size: 28px;
+  }
+  
   .booksStack {
     width: 350px;
     height: 250px;
   }
+  
+  .leftContent,
+  .rightContent {
+    padding: 0 16px;
+  }
 }
 
 @media (max-width: 768px) {
+  .skillsSection {
+    padding: 60px 20px;
+  }
+  
   .heading {
     font-size: 48px;
+  }
+  
+  .iconCircleContainer {
+    width: 320px;
+    height: 200px;
+  }
+  
+  .circleHandwrittenText {
+    font-size: 24px;
+  }
+  
+  .description {
+    font-size: 14px;
   }
   
   .skillsCategories {
@@ -287,13 +318,82 @@
     gap: 32px;
   }
   
-  .techIconsGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+  .categoryTitle {
+    font-size: 18px;
+  }
+  
+  .skillsList {
+    font-size: 14px;
   }
   
   .booksStack {
     width: 300px;
-    height: 200px;
+    height: 220px;
+  }
+  
+  .pixelPerfectText {
+    font-size: 20px;
+  }
+  
+  .wishlistText {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsSection {
+    padding: 40px 16px;
+  }
+  
+  .heading {
+    font-size: 36px;
+  }
+  
+  .iconCircleContainer {
+    width: 280px;
+    height: 180px;
+  }
+  
+  .circleHandwrittenText {
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 13px;
+  }
+  
+  .categoryTitle {
+    font-size: 16px;
+  }
+  
+  .skillsList {
+    font-size: 13px;
+  }
+  
+  .booksStack {
+    width: 260px;
+    height: 180px;
+  }
+  
+  .pixelPerfectCircle svg {
+    width: 120px;
+    height: 80px;
+  }
+  
+  .pixelPerfectText {
+    font-size: 18px;
+    padding: 15px;
+  }
+  
+  .wishlistText {
+    font-size: 16px;
+  }
+  
+  .starsPointing {
+    gap: 10px;
+  }
+  
+  .starPoint {
+    font-size: 14px;
   }
 }

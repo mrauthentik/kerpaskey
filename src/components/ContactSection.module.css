@@ -100,9 +100,18 @@
   .handwrittenText {
     font-size: 24px;
   }
+  
+  .leftContent,
+  .rightContent {
+    padding: 0 16px;
+  }
 }
 
 @media (max-width: 768px) {
+  .contactSection {
+    padding: 60px 20px;
+  }
+  
   .heading {
     font-size: 48px;
   }
@@ -117,5 +126,43 @@
   
   .contactItem a {
     font-size: 16px;
+  }
+  
+  .contactInfo {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactSection {
+    padding: 40px 16px;
+  }
+  
+  .heading {
+    font-size: 36px;
+  }
+  
+  .handwrittenText {
+    font-size: 18px;
+  }
+  
+  .contactItem h3 {
+    font-size: 16px;
+  }
+  
+  .contactItem a {
+    font-size: 14px;
+  }
+  
+  .contactInfo {
+    gap: 24px;
+  }
+  
+  .star {
+    font-size: 36px;
+  }
+  
+  .starSmall {
+    font-size: 18px;
   }
 }

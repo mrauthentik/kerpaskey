@@ -84,12 +84,11 @@ const AboutSection: React.FC = () => {
           
           <div className={styles.textContent}>
             <p className={styles.paragraph}>
-              As a junior UX/UI Designer based in Paris, I get to combine my love for 
-              technology with my passion for art and design. I enjoy using my 
-              creativity and problem-solving skills to create digital experiences 
-              that not only look great but also work seamlessly for the user. When 
-              I'm not designing, you can usually find me exploring the city's many 
-              museums and galleries for inspiration.
+              While almost there in becoming a Full-Stack Engineer, I have been working with experience building scalable, production-ready web applications using modern 
+                 frontend frameworks and backend technologies. I’ve worked across education and SaaS platforms, delivering 
+                 reliable systems with clean architecture, pixel-perfect interfaces, and smooth, intuitive user flows.
+                I take ownership of problems end-to-end, from understanding product requirements to implementing, 
+                    refining, and maintaining solutions.
             </p>
             
             <p className={styles.paragraph}>

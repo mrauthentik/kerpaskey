@@ -8,6 +8,61 @@
   justify-content: center;
 }
 
+@media (max-width: 1024px) {
+  .projectsSection {
+    padding: 60px 20px;
+  }
+  
+  .heading {
+    font-size: 60px;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectsSection {
+    padding: 40px 16px;
+  }
+  
+  .heading {
+    font-size: 48px;
+  }
+  
+  .smiley {
+    font-size: 36px;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projectImage {
+    height: 250px;
+  }
+  
+  .projectName {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsSection {
+    padding: 40px 16px;
+  }
+  
+  .heading {
+    font-size: 36px;
+  }
+  
+  .projectName {
+    font-size: 24px;
+  }
+}
+
 .container {
   max-width: 1400px;
   width: 100%;

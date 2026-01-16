@@ -397,11 +397,45 @@
   .phoneScreen {
     height: 220px;
   }
+  
+  .laptopMockup {
+    max-width: 500px;
+  }
+  
+  .laptopIframe {
+    height: 350px;
+  }
+  
+  .leftContent,
+  .rightContent {
+    padding: 0 16px;
+  }
 }
 
 @media (max-width: 768px) {
+  .projectDetailSection {
+    padding: 60px 20px;
+  }
+  
   .heading {
     font-size: 48px;
+  }
+  
+  .projectMeta {
+    font-size: 18px;
+  }
+  
+  .textContent {
+    font-size: 15px;
+  }
+  
+  .feature {
+    font-size: 13px;
+  }
+  
+  .featureGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
   
   .phonesGrid {
@@ -419,5 +453,106 @@
   
   .musicNote {
     font-size: 32px;
+  }
+  
+  .laptopMockup {
+    max-width: 100%;
+  }
+  
+  .laptopIframe {
+    height: 300px;
+  }
+  
+  .screenshotsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .handwrittenLanguages,
+  .handwrittenArchitecture {
+    font-size: 20px;
+  }
+  
+  .handwrittenLanguages h3,
+  .handwrittenArchitecture h3 {
+    font-size: 24px;
+  }
+  
+  .annotationText,
+  .handwrittenNote {
+    font-size: 20px;
+  }
+  
+  .statNumber {
+    font-size: 28px;
+  }
+  
+  .statLabel {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectDetailSection {
+    padding: 40px 16px;
+  }
+  
+  .heading {
+    font-size: 36px;
+  }
+  
+  .projectMeta {
+    font-size: 16px;
+  }
+  
+  .textContent {
+    font-size: 14px;
+  }
+  
+  .feature {
+    font-size: 12px;
+  }
+  
+  .laptopIframe {
+    height: 250px;
+  }
+  
+  .phonesGrid {
+    padding: 10px;
+  }
+  
+  .phoneScreen {
+    height: 180px;
+  }
+  
+  .handwrittenLanguages h3,
+  .handwrittenArchitecture h3 {
+    font-size: 20px;
+  }
+  
+  .handwrittenLanguages p,
+  .handwrittenArchitecture p {
+    font-size: 18px;
+  }
+  
+  .annotationText,
+  .handwrittenNote {
+    font-size: 18px;
+  }
+  
+  .statNumber {
+    font-size: 24px;
+  }
+  
+  .statLabel {
+    font-size: 13px;
+  }
+  
+  .challengeText {
+    font-size: 24px;
+  }
+  
+  .challengeDescription {
+    font-size: 14px;
   }
 }
