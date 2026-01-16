@@ -2,45 +2,60 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="min-h-screen bg-[#3a3a3a] text-white flex flex-col">
+    <section className="min-h-screen bg-[#3d3d3d] text-white flex flex-col">
       {/* Navigation */}
-      <nav className="border-b border-gray-600">
-        <div className="container mx-auto px-6 py-6 flex justify-between items-center">
-          <div className="text-sm font-light">2023</div>
-          <div className="text-sm font-light">Curriculum Vitae</div>
-          <div className="text-sm font-light">Sharon Kravanja</div>
+      <nav className="border-b border-[#5a5a5a]">
+        <div className="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center text-sm tracking-wide">
+          <div className="font-light">2023</div>
+          <div className="font-light">Curriculum Vitae</div>
+          <div className="font-light">Sharon Kravanja</div>
         </div>
       </nav>
 
       {/* Hero Content */}
-      <div className="flex-1 flex items-center justify-center px-6">
-        <div className="text-center relative">
-          {/* Handwritten Name */}
-          <div className="font-handwriting text-4xl md:text-5xl text-[#8b9dc3] mb-4">
-            Sharon Kravanja
+      <div className="flex-1 flex items-center justify-center px-6 py-16">
+        <div className="text-center relative max-w-5xl">
+          {/* Handwritten Name with Decorative Curve */}
+          <div className="relative mb-2">
+            <svg 
+              className="absolute left-1/2 -translate-x-1/2 -top-4 w-64 h-32" 
+              viewBox="0 0 250 120" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                d="M 20 100 Q 125 20, 230 100" 
+                stroke="#8b9dc3" 
+                strokeWidth="2" 
+                fill="none"
+              />
+            </svg>
+            <div className="font-handwriting text-5xl md:text-6xl text-[#8b9dc3] relative z-10">
+              Sharon Kravanja
+            </div>
           </div>
 
           {/* Portfolio Text with Decorative Elements */}
-          <div className="relative inline-block">
-            <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight">
+          <div className="relative inline-block mt-4">
+            <h1 className="font-serif text-8xl md:text-9xl lg:text-[12rem] font-bold tracking-tight leading-none">
               P
-              <span className="relative inline-block">
+              <span className="relative inline-block mx-1">
                 o
-                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl md:text-3xl font-handwriting text-[#8b9dc3]">
+                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-handwriting text-[#8b9dc3] font-normal">
                   23
                 </span>
               </span>
               rtf
-              <span className="relative inline-block">
+              <span className="relative inline-block mx-1">
                 o
-                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl">
+                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl md:text-5xl text-[#8b9dc3]">
                   ✦
                 </span>
               </span>
               li
-              <span className="relative inline-block">
+              <span className="relative inline-block mx-1">
                 o
-                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl md:text-2xl font-handwriting text-[#8b9dc3]">
+                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl md:text-3xl font-handwriting text-[#8b9dc3] font-normal">
                   CV
                 </span>
               </span>
@@ -48,8 +63,8 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Subtitle */}
-          <div className="mt-8">
-            <span className="inline-block border-2 border-white rounded-full px-8 py-2 text-lg md:text-xl font-light tracking-wide">
+          <div className="mt-10">
+            <span className="inline-block border-2 border-white rounded-full px-10 py-3 text-xl md:text-2xl font-light tracking-wider">
               UX/UI Designer
             </span>
           </div>
@@ -57,7 +72,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Bottom Border */}
-      <div className="border-t border-gray-600 h-12"></div>
+      <div className="border-t border-[#5a5a5a]"></div>
     </section>
   );
 };

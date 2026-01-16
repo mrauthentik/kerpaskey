@@ -1,0 +1,157 @@
+.heroSection {
+  min-height: 100vh;
+  background-color: #3d3d3d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  border-bottom: 1px solid #5a5a5a;
+  padding: 20px 0;
+}
+
+.navContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.heroContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+}
+
+.heroInner {
+  text-align: center;
+  position: relative;
+  max-width: 1200px;
+}
+
+.nameContainer {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.curveSvg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -16px;
+  width: 280px;
+  height: 128px;
+  z-index: 1;
+}
+
+.handwrittenName {
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  color: #8b9dc3;
+  position: relative;
+  z-index: 10;
+  font-weight: 400;
+}
+
+.portfolioContainer {
+  position: relative;
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.portfolioText {
+  font-family: 'Playfair Display', serif;
+  font-size: 140px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.letterO {
+  position: relative;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.decoration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.decoration23 {
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  color: #8b9dc3;
+  font-weight: 400;
+}
+
+.decorationStar {
+  font-size: 50px;
+  color: #8b9dc3;
+}
+
+.decorationCV {
+  font-family: 'Caveat', cursive;
+  font-size: 32px;
+  color: #8b9dc3;
+  font-weight: 400;
+}
+
+.subtitle {
+  margin-top: 40px;
+}
+
+.subtitleBadge {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 12px 40px;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.bottomBorder {
+  border-top: 1px solid #5a5a5a;
+}
+
+@media (max-width: 768px) {
+  .portfolioText {
+    font-size: 80px;
+  }
+  
+  .handwrittenName {
+    font-size: 40px;
+  }
+  
+  .decoration23 {
+    font-size: 24px;
+  }
+  
+  .decorationStar {
+    font-size: 30px;
+  }
+  
+  .decorationCV {
+    font-size: 20px;
+  }
+  
+  .subtitleBadge {
+    font-size: 18px;
+    padding: 10px 32px;
+  }
+}
