@@ -1,0 +1,195 @@
+.projectDetailSection {
+  min-height: 100vh;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 80px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.leftContent {
+  padding: 0 32px;
+}
+
+.heading {
+  font-family: 'Turret Road', sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 32px;
+  line-height: 1;
+}
+
+.textContent {
+  font-family: 'Macondo', cursive;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.textContent p {
+  margin-bottom: 16px;
+}
+
+.textContent strong {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.challengeBox {
+  position: relative;
+  border: 2px solid #8b9dc3;
+  border-radius: 50px;
+  padding: 24px 32px;
+  margin: 40px 0;
+  background-color: rgba(139, 157, 195, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.challengeBox:hover {
+  background-color: rgba(139, 157, 195, 0.2);
+}
+
+.arrow {
+  position: absolute;
+  top: -30px;
+  left: 40px;
+  font-size: 32px;
+  color: #8b9dc3;
+  transform: rotate(-45deg);
+}
+
+.challengeText {
+  font-family: 'Caveat', cursive;
+  color: #8b9dc3;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.challengeDescription {
+  font-family: 'Macondo', cursive;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.bottomCurve {
+  width: 300px;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.rightContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
+
+.phonesContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 700px;
+}
+
+.musicNote {
+  position: absolute;
+  font-size: 48px;
+  color: #8b9dc3;
+  z-index: 10;
+}
+
+.annotation {
+  position: absolute;
+  font-family: 'Caveat', cursive;
+  color: #8b9dc3;
+  font-size: 20px;
+  z-index: 5;
+  white-space: nowrap;
+}
+
+.phonesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 40px;
+}
+
+.phoneMockup {
+  background: linear-gradient(135deg, #4a4a4a 0%, #3a3a3a 100%);
+  border-radius: 24px;
+  padding: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.phoneMockup:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
+}
+
+.phoneScreen {
+  background-color: #2a2a2a;
+  border-radius: 16px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-family: 'Macondo', cursive;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .heading {
+    font-size: 60px;
+  }
+  
+  .phonesContainer {
+    height: 600px;
+  }
+  
+  .phoneScreen {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 48px;
+  }
+  
+  .phonesGrid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .phonesContainer {
+    height: 500px;
+  }
+  
+  .phoneScreen {
+    height: 200px;
+  }
+  
+  .musicNote {
+    font-size: 32px;
+  }
+}
