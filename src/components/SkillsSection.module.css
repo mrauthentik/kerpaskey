@@ -151,17 +151,16 @@
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
-  background-color: rgba(139, 157, 195, 0.1);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .booksStack:hover {
   transform: scale(1.02);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.booksImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .bookPlaceholder {

@@ -18,7 +18,7 @@ const AboutSection: React.FC = () => {
 
             {/* Decorative Text Elements Around Circle */}
             <div className={`${styles.trait} ${styles.traitCreative}`}>
-              creative
+              problem solver
               <span className={styles.star}>✦</span>
             </div>
 
@@ -28,21 +28,21 @@ const AboutSection: React.FC = () => {
             </div>
 
             <div className={`${styles.trait} ${styles.traitSociable}`}>
-              sociable
+              collaborative
             </div>
 
             <div className={`${styles.trait} ${styles.traitEmpathic}`}>
-              empathic
+              quality-driven
             </div>
 
             <div className={`${styles.trait} ${styles.traitMotivated}`}>
-              motivated
+              continuous learner
               <span className={styles.star}>✦</span>
             </div>
 
             <div className={`${styles.trait} ${styles.traitFastLearner}`}>
               <span className={styles.star}>✦</span>
-              fast learner
+              full-stack engineer
               <span className={styles.starSmall}>✦</span>
             </div>
 
@@ -84,22 +84,17 @@ const AboutSection: React.FC = () => {
           
           <div className={styles.textContent}>
             <p className={styles.paragraph}>
-              I'm a Full-Stack Engineer who builds scalable, production-ready web applications 
-              using modern frontend frameworks and backend technologies. I've delivered reliable 
-              systems across education and SaaS platforms, with a focus on clean architecture, 
-              pixel-perfect interfaces, and smooth user experiences.
+              As a junior UX/UI Designer based in Paris, I get to combine my love for 
+              technology with my passion for art and design. I enjoy using my 
+              creativity and problem-solving skills to create digital experiences 
+              that not only look great but also work seamlessly for the user. When 
+              I'm not designing, you can usually find me exploring the city's many 
+              museums and galleries for inspiration.
             </p>
             
             <p className={styles.paragraph}>
-              I take ownership of problems end-to-end—from understanding requirements to 
-              implementing, refining, and maintaining solutions. My background in teaching 
-              programming has strengthened my engineering approach: I write clear, maintainable 
-              code and think carefully about both developer and user experience.
-            </p>
-            
-            <p className={styles.paragraph}>
-              I thrive in remote, distributed teams and enjoy collaborating with people who 
-              value quality, continuous improvement, and practical, well-engineered solutions.
+              I believe that continuous learning is the key to success, and I'm always on the 
+              lookout for fresh challenges to keep me motivated and engaged.
             </p>
           </div>
         </div>

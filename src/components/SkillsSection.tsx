@@ -227,16 +227,16 @@ const SkillsSection: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
             >
-              my books<br />about<br />Design
+             
             </motion.div>
 
-            {/* Books Stack Placeholder */}
+            {/* Books Stack Image */}
             <motion.div 
               className={styles.booksStack}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <div className={styles.bookPlaceholder}>Design Books Collection</div>
+              <img src="/books-stack.jpg" alt="Design Books" className={styles.booksImage} />
             </motion.div>
 
             <motion.div 
@@ -246,7 +246,7 @@ const SkillsSection: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.7 }}
             >
-              I have so many more<br />in my Amazon wishlist...
+              Clean and Scalable codes<br />Good Syntax
             </motion.div>
           </motion.div>
         </div>
