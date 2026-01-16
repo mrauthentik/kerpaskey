@@ -9,10 +9,12 @@ import TeachingProject from './components/TeachingProject'
 import JourneySection from './components/JourneySection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import ScrollProgress from './components/ScrollProgress'
 
 function App() {
   return (
     <div className="min-h-screen">
+      <ScrollProgress />
       <HeroSection />
       <AboutSection />
       <SkillsSection />

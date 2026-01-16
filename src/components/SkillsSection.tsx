@@ -105,15 +105,34 @@ const SkillsSection: React.FC = () => {
           </motion.div>
 
           {/* Skills Categories */}
-          <div className={styles.skillsCategories}>
+          <motion.div 
+            className={styles.skillsCategories}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.15,
+                  delayChildren: 0.3
+                }
+              }
+            }}
+          >
             {skillsCategories.map((category, catIndex) => (
               <motion.div
                 key={catIndex}
                 className={styles.categorySection}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.6 + catIndex * 0.1 }}
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { 
+                    opacity: 1, 
+                    y: 0,
+                    transition: { duration: 0.6, ease: [0.6, 0.05, 0.01, 0.9] }
+                  }
+                }}
               >
                 <h3 className={styles.categoryTitle}>{category.title}</h3>
                 <ul className={styles.skillsList}>
@@ -129,7 +148,7 @@ const SkillsSection: React.FC = () => {
                 </ul>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
 
         {/* Right Side - Books */}

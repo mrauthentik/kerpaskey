@@ -60,8 +60,12 @@ const ProjectsSection: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ 
-                y: -10,
-                transition: { duration: 0.3 }
+                y: -15,
+                scale: 1.02,
+                transition: { 
+                  duration: 0.4,
+                  ease: [0.6, 0.05, 0.01, 0.9]
+                }
               }}
             >
               <div className={styles.projectImage}>
