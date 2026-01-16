@@ -187,7 +187,7 @@ const SkillsSection: React.FC = () => {
                 repeat: Infinity,
               }}
             >
-              ✦
+              
             </motion.div>
             <motion.div 
               className={styles.star}
@@ -201,7 +201,7 @@ const SkillsSection: React.FC = () => {
                 repeat: Infinity,
               }}
             >
-              ✦
+              
             </motion.div>
             <motion.div 
               className={styles.starSmall}
@@ -214,7 +214,7 @@ const SkillsSection: React.FC = () => {
                 repeat: Infinity,
               }}
             >
-              ✦
+              
             </motion.div>
             <motion.div 
               className={styles.starSmall}
@@ -227,18 +227,40 @@ const SkillsSection: React.FC = () => {
                 repeat: Infinity,
               }}
             >
-              ✦
+              
             </motion.div>
 
+            {/* Pixel Perfect Circle */}
             <motion.div 
-              className={styles.handwrittenText}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              className={styles.pixelPerfectCircle}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
             >
-             
+              <svg width="150" height="100" viewBox="0 0 150 100">
+                <ellipse
+                  cx="75"
+                  cy="50"
+                  rx="65"
+                  ry="40"
+                  stroke="#8b9dc3"
+                  strokeWidth="2"
+                  fill="none"
+                />
+              </svg>
+              <div className={styles.pixelPerfectText}>
+                Pixel Perfect
+              </div>
             </motion.div>
+
+            {/* Decorative Stars Pointing Down */}
+            <div className={styles.starsPointing}>
+              <div className={styles.starPoint}>✦</div>
+              <div className={styles.starPoint}>✦</div>
+              <div className={styles.starPoint}>✦</div>
+              <div className={styles.starPoint}>✦</div>
+            </div>
 
             {/* Books Stack Image */}
             <motion.div 

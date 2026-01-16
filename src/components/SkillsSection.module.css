@@ -164,6 +164,59 @@
   justify-content: center;
 }
 
+.pixelPerfectCircle {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 5;
+}
+
+.pixelPerfectCircle svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pixelPerfectText {
+  position: relative;
+  z-index: 6;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  color: #8b9dc3;
+  text-align: center;
+  padding: 20px;
+}
+
+.starsPointing {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  z-index: 4;
+}
+
+.starPoint {
+  font-size: 16px;
+  color: #8b9dc3;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.starPoint:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.starPoint:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.starPoint:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
 .booksStack {
   width: 400px;
   height: 300px;
