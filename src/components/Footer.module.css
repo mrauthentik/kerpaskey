@@ -1,0 +1,190 @@
+.footer {
+  background-color: #f5f3f0;
+  color: #000;
+  padding: 60px 24px 40px;
+  border-top: 1px solid #d0d0d0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.navItem {
+  font-family: 'Macondo', cursive;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #8b9dc3;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profileContainer {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 40px;
+}
+
+.decorativeRing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  font-size: 24px;
+  color: #8b9dc3;
+  z-index: 2;
+}
+
+.profileImage {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px;
+  z-index: 3;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.profileImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thankYou {
+  font-family: 'Turret Road', sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 32px;
+  line-height: 1;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactInfo h3 {
+  font-family: 'Turret Road', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Macondo', cursive;
+  font-size: 15px;
+}
+
+.contactItem svg {
+  color: #8b9dc3;
+  flex-shrink: 0;
+}
+
+.contactItem a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactItem a:hover {
+  color: #8b9dc3;
+}
+
+.rightContent {
+  padding-top: 40px;
+}
+
+.message {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #8b9dc3;
+  margin-bottom: 24px;
+}
+
+.signature {
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  color: #8b9dc3;
+  text-align: right;
+  margin-top: 32px;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .thankYou {
+    font-size: 48px;
+  }
+  
+  .message {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topNav {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .thankYou {
+    font-size: 40px;
+  }
+  
+  .profileContainer {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profileImage {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .message {
+    font-size: 18px;
+  }
+}

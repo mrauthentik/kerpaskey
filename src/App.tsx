@@ -6,6 +6,7 @@ import GueCyberProject from './components/GueCyberProject'
 import StyleitPadiProject from './components/StyleitPadiProject'
 import TeachingProject from './components/TeachingProject'
 import JourneySection from './components/JourneySection'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <StyleitPadiProject />
       <TeachingProject />
       <JourneySection />
+      <Footer />
     </div>
   )
 }
