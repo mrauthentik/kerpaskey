@@ -8,7 +8,13 @@ const HeroSection: React.FC = () => {
       <nav className={styles.nav}>
         <div className={styles.navContainer}>
           <div className={styles.navItem}>2023</div>
-          <div className={styles.navItem}>Curriculum Vitae</div>
+          <a 
+            href="/Uchenna-Umoke-CV-Resume.pdf" 
+            download 
+            className={styles.navItem}
+          >
+            Curriculum Vitae
+          </a>
           <div className={styles.navItem}>Sharon Kravanja</div>
         </div>
       </nav>
@@ -68,6 +74,17 @@ const HeroSection: React.FC = () => {
             <span className={styles.subtitleBadge}>
               UX/UI Designer
             </span>
+          </div>
+
+          {/* Download CV Button */}
+          <div className={styles.cvButtonContainer}>
+            <a 
+              href="/Uchenna-Umoke-CV-Resume.pdf" 
+              download 
+              className={styles.cvButton}
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>
