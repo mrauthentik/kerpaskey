@@ -4,12 +4,12 @@ import styles from './SkillsSection.module.css';
 
 const SkillsSection: React.FC = () => {
   const skillIcons = [
-    { name: 'Figma', icon: '🎨' },
-    { name: 'AI', icon: '🤖' },
-    { name: 'HTML', icon: '📄' },
-    { name: 'JS', icon: '💛' },
-    { name: 'PS', icon: '🎨' },
-    { name: 'CSS', icon: '💙' },
+    { name: 'React', icon: '⚛️' },
+    { name: 'TypeScript', icon: '📘' },
+    { name: 'Node.js', icon: '🟢' },
+    { name: 'Database', icon: '🗄️' },
+    { name: 'API', icon: '🔌' },
+    { name: 'Git', icon: '🔀' },
   ];
 
   const skillsList1 = [

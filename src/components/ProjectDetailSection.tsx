@@ -20,7 +20,7 @@ const ProjectDetailSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Danc.r
+            LMS Platform
           </motion.h2>
 
           <motion.div 
@@ -31,16 +31,16 @@ const ProjectDetailSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p>
-              For the final project, Ironhack allowed its students to collaborate with companies or startups.
+              Designed and built a comprehensive Learning Management System for educational institutions.
             </p>
             <p>
-              I had the pleasure to been selected to work with my first choice.
+              The platform serves thousands of students and instructors, delivering seamless learning experiences.
             </p>
             <p>
-              Based in Paris, Danc.r is a fresh startup that is developing <strong>an application capable of measuring the accuracy of your dance performances using motion capture technology.</strong>
+              Built with <strong>React, TypeScript, Node.js, and Supabase, the system features real-time collaboration, progress tracking, and scalable architecture.</strong>
             </p>
             <p>
-              This innovative tool provides users with measurements of their skills and progress.
+              This production-grade application emphasizes performance optimization, clean code, and exceptional user experience.
             </p>
           </motion.div>
 
@@ -54,10 +54,10 @@ const ProjectDetailSection: React.FC = () => {
           >
             <div className={styles.arrow}>→</div>
             <div className={styles.challengeText}>
-              my challenge!
+              key features!
             </div>
             <p className={styles.challengeDescription}>
-              Select, learn a choreography and show your statistics.
+              Course management, real-time progress tracking, interactive assessments, and analytics dashboard.
             </p>
           </motion.div>
 

@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
       {/* Navigation */}
       <nav className={styles.nav}>
         <div className={styles.navContainer}>
-          <div className={styles.navItem}>2023</div>
+          <div className={styles.navItem}>2026</div>
           <a 
             href="/Uchenna-Umoke-CV-Resume.pdf" 
             download 
@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
           >
             Curriculum Vitae
           </a>
-          <div className={styles.navItem}>Sharon Kravanja</div>
+          <div className={styles.navItem}>Uchenna Umoke</div>
         </div>
       </nav>
 
@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
               />
             </svg>
             <div className={styles.handwrittenName}>
-              Sharon Kravanja
+              Uchenna Umoke
             </div>
           </div>
 
@@ -49,7 +49,7 @@ const HeroSection: React.FC = () => {
               <span className={styles.letterO}>
                 o
                 <span className={`${styles.decoration} ${styles.decoration23}`}>
-                  23
+                  26
                 </span>
               </span>
               rtf
@@ -72,7 +72,7 @@ const HeroSection: React.FC = () => {
           {/* Subtitle */}
           <div className={styles.subtitle}>
             <span className={styles.subtitleBadge}>
-              UX/UI Designer
+              Full Stack Developer
             </span>
           </div>
 

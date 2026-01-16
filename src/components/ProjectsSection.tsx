@@ -119,7 +119,7 @@ const ProjectsSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.6 }}
           >
-            During Ironhack
+            Production-ready applications
           </motion.p>
           
           <motion.p 
@@ -129,10 +129,10 @@ const ProjectsSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.7 }}
           >
-            "Just apps? You are boring!"<br />
-            Don't worry, I'm creating also<br />
-            websites I just was more pleased<br />
-            by my app projects.
+            From education platforms to SaaS,<br />
+            I build scalable solutions with<br />
+            clean architecture and exceptional<br />
+            user experiences.
           </motion.p>
           
           <motion.p 
@@ -142,7 +142,7 @@ const ProjectsSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.8 }}
           >
-            Self-taught
+            Full-Stack Engineer
           </motion.p>
         </div>
       </div>
