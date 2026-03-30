@@ -31,12 +31,7 @@ const QADetectiveProject: React.FC = () => {
 
           {/* Terminal/CLI Mockup */}
           <motion.div
-            style={{
-              position: 'relative',
-              width: '100%',
-              maxWidth: '560px',
-              margin: '0 auto',
-            }}
+            className={styles.terminalContainer}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -44,41 +39,19 @@ const QADetectiveProject: React.FC = () => {
             whileHover={{ scale: 1.02 }}
           >
             {/* Terminal Window */}
-            <div style={{
-              background: '#1a1a2e',
-              borderRadius: '12px',
-              overflow: 'hidden',
-              boxShadow: '0 20px 60px rgba(0, 0, 0, 0.5)',
-              border: '1px solid #2a2a4a',
-            }}>
+            <div className={styles.terminalWindow}>
               {/* Terminal Header */}
-              <div style={{
-                background: '#16162a',
-                padding: '12px 16px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-              }}>
-                <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#ff5f56' }} />
-                <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#ffbd2e' }} />
-                <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#27c93f' }} />
-                <span style={{
-                  marginLeft: '12px',
-                  fontFamily: 'monospace',
-                  fontSize: '13px',
-                  color: '#8b9dc3',
-                  opacity: 0.7,
-                }}>qa-detective — run</span>
+              <div className={styles.terminalHeader}>
+                <div className={styles.terminalDots}>
+                  <div className={styles.dot} style={{ background: '#ff5f56' }} />
+                  <div className={styles.dot} style={{ background: '#ffbd2e' }} />
+                  <div className={styles.dot} style={{ background: '#27c93f' }} />
+                </div>
+                <span className={styles.terminalTitle}>qa-detective — run</span>
               </div>
 
               {/* Terminal Content */}
-              <div style={{
-                padding: '20px',
-                fontFamily: "'Fira Code', 'Consolas', monospace",
-                fontSize: '13px',
-                lineHeight: '1.8',
-                color: '#c9d1d9',
-              }}>
+              <div className={styles.terminalContent}>
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}

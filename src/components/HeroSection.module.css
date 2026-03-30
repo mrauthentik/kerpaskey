@@ -257,3 +257,18 @@
     padding: 40px 16px;
   }
 }
+
+@media (max-width: 360px) {
+  .portfolioText {
+    font-size: 40px;
+  }
+  
+  .handwrittenName {
+    font-size: 24px;
+  }
+  
+  .subtitleBadge {
+    font-size: 12px;
+    padding: 6px 20px;
+  }
+}
