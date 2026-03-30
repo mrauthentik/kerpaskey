@@ -6,6 +6,7 @@ import NexaProject from './components/NexaProject'
 import GueCyberProject from './components/GueCyberProject'
 import StyleitPadiProject from './components/StyleitPadiProject'
 import TeachingProject from './components/TeachingProject'
+import QADetectiveProject from './components/QADetectiveProject'
 import JourneySection from './components/JourneySection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
@@ -23,6 +24,7 @@ function App() {
       <GueCyberProject />
       <StyleitPadiProject />
       <TeachingProject />
+      <QADetectiveProject />
       <JourneySection />
       <ContactSection />
       <Footer />

@@ -8,6 +8,7 @@ const ProjectsSection: React.FC = () => {
     { id: 2, name: '2. GueCyber LMS', thumbnail: null },
     { id: 3, name: '3. Styleit Padi Backend', thumbnail: '/projects/thumbnails/styleit-thumb.png' },
     { id: 4, name: '4. Teaching & Training', thumbnail: '/projects/thumbnails/teaching-thumb.jpg' },
+    { id: 5, name: '5. QA Detective', thumbnail: '/projects/qa.png' },
   ];
 
   return (
@@ -72,7 +73,7 @@ const ProjectsSection: React.FC = () => {
                 {project.thumbnail ? (
                   <img src={project.thumbnail} alt={project.name} className={styles.projectThumbnail} />
                 ) : (
-                  <div className={styles.projectPlaceholder}>GueCyber LMS</div>
+                  <div className={styles.projectPlaceholder}>{project.name.replace(/^\d+\.\s*/, '')}</div>
                 )}
               </div>
               <motion.div 

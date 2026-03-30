@@ -7,14 +7,14 @@ const SkillsSection: React.FC = () => {
     {
       title: 'Frontend Development',
       skills: [
-        'React, TypeScript, JavaScript (ES6+)',
+        'React, Next.js 15, TypeScript, JavaScript (ES6+)',
         'Component-driven architecture',
         'Responsive & mobile-first design',
         'Pixel-perfect UI implementation',
         'Framer Motion (animations & transitions)',
         'GSAP',
         'Material UI, Tailwind CSS, Emotion Styled, ShadCN UI',
-        'Accessibility (semantic HTML, ARIA basics)',
+        'Accessibility (semantic HTML, ARIA, WCAG 2.1)',
       ],
     },
     {
@@ -22,10 +22,22 @@ const SkillsSection: React.FC = () => {
       skills: [
         'Node.js, Express.js',
         'RESTful API design & integration',
+        'PostgreSQL, SQL (relational data modelling & queries)',
+        'JWT authentication, Passport.js, Google OAuth',
+        'BullMQ job queues & Redis',
         'Backend-as-a-Service (BaaS)',
         'Supabase (Auth, Database, Edge Functions)',
         'Firebase (Authentication, Firestore)',
-        'SQL (relational data modelling & queries)',
+      ],
+    },
+    {
+      title: 'AI & Automated Testing',
+      skills: [
+        'Groq API / LLM integration (LLaMA 3)',
+        'Playwright (browser automation & crawling)',
+        'axe-core (automated accessibility audits)',
+        'k6 (load & performance testing)',
+        'AI-powered test case generation',
       ],
     },
     {
@@ -42,7 +54,9 @@ const SkillsSection: React.FC = () => {
       skills: [
         'Git, GitHub (version control & collaboration)',
         'GitHub Actions (CI/CD pipelines)',
+        'Turborepo & pnpm workspaces (monorepo)',
         'Docker (fundamentals & deployment workflows)',
+        'Railway (hosting & deployments)',
       ],
     },
   ];
