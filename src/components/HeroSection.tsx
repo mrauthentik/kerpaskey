@@ -87,9 +87,14 @@ const HeroSection: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <span className={styles.subtitleBadge}>
+            <button
+              className={styles.subtitleBadge}
+              onClick={() => {
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Full Stack Developer
-            </span>
+            </button>
           </motion.div>
 
           {/* Download CV Button */}

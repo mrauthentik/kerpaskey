@@ -3,7 +3,7 @@ import styles from './AboutSection.module.css';
 
 const AboutSection: React.FC = () => {
   return (
-    <section className={styles.aboutSection}>
+    <section id="about" className={styles.aboutSection}>
       <div className={styles.container}>
         {/* Left Side - Photo with Decorative Elements */}
         <div className={styles.photoContainer}>
